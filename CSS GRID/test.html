@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess Board</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(8, 100px);
+      grid-template-rows: repeat(8, 100px);
+      width: 800px;
+    }
+
+    .white {
+      background-color: #f0d9b5;
+      width: 100px;
+      height: 100px;
+    }
+
+    .black {
+      background-color: #b58863;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="chessboard"></div>
+
+  <script>
+    const container = document.getElementById("chessboard");
+
+    for (let row = 0; row < 8; row++) {
+      for (let col = 0; col < 8; col++) {
+        let square = document.createElement("div");
+        square.className = (row + col) % 2 === 0 ? "white" : "black";
+        container.appendChild(square);
+      }
+    }
+  </script>
+</body>
+</html>
