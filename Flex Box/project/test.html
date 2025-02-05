@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reminding</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center ;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .pricing-plan{
+      background-color: #F2F2F2 ;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1;
+      text-align: center;
+    }
+
+    .plan-title{
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .plan-price{
+      font-size : 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .plan-button{
+      background-color: orange;
+      border: none;
+      color: white;
+      padding:10px;
+      border-radius: 5px;
+  }
+
+  .plan-features li{
+    margin-bottom: 20px;
+  }
+
+  ul{
+    list-style-type: none;
+    padding: 0;
+  }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$9.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 10GB storage</li>
+        <li>✅1 user</li>
+        <li>🚫support</li>
+      </ul>
+      <button class ="plan-button">Sign Up</button>
+    </div>
+
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">19.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 510GB storage</li>
+        <li>✅5 user</li>
+        <li>✅ phone &amp; Email Support</li>
+        <button class ="plan-button">Sign Up</button>
+      </ul>
+    </div>
+
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 100GB storage</li>
+        <li>✅10 user</li>
+        <li>✅ 24/7 support</li>
+        <button class ="plan-button">Sign Up</button>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
